@@ -143,8 +143,9 @@ table{
     .wrapper {
         width: 100%;
     }
+
     nav {
-        margin-right:15px;
+        margin-right:20px;
     }
 
     .container {
@@ -165,7 +166,7 @@ table{
     }
 
     nav {
-        margin-right:15px;
+        margin-right:20px;
     }
 
     .container {
@@ -182,6 +183,11 @@ table{
 @media only screen and (max-width: 576px) {
     .wrapper {
         width: 100%;
+    }
+
+    nav {
+        margin-right:30px;
+      
     }
 
     .desk-menu{ 
