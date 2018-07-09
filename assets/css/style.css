@@ -46,20 +46,24 @@ nav {
     margin-left: auto;
 }
 
-nav ul li {
+.topnav li {
     display: inline-block;
     padding-left: 30px;
 }
 
-a {
-    color: rgba(133, 130, 130)
+ .icon {
+    display: none;
+  }
+
+.link-class {
+    color: #858282;
 }
 
-a:hover{
+.link-class:hover{
     color: #82cac7;
 }
 
-a:active{
+.link-class:active{
     color: #82cac7;
 }
 
@@ -135,11 +139,10 @@ hr {
         margin: 0 20px 20px 20px;
         width: auto;
     }
-  
+
     #logo {
         margin-left: 20px;
     }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -151,38 +154,79 @@ hr {
         margin-right:20px;
     }
 
-    .container {
-        margin: 0 20px 20px 20px;
-        width: auto;
-    }
-
     #logo {
         margin-left: 20px;
     }
 
+    .container {
+        margin: 0 20px 20px 20px;
+        width: auto;
+    }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
     .wrapper {
         width: 100%;
     }
 
     nav {
-        margin-right:30px;
-      
+        margin-right: 0px
     }
-
-    .desk-menu{ 
-        display: block;
+    
+    .topnav ul {
+        display: none;
     }
-
-    .desk-menu li { 
-        display: block;
-    }
-
+    
     .container {
         margin: 0 20px 20px 20px;
         width: auto;
     }
 
-}
+    #flex-header {
+        position: relative;
+        display: block;
+    } 
+
+     .icon {
+      position: absolute;
+      right: 20px;
+      top: 25px;
+    }
+    
+    #logo {
+        width: 200px;
+        margin-left: 0;
+        padding: 26px 35px 26px 35px;
+        font-family: 'Georgia', Times, Times New Roman, serif; font-size: 28px;
+    }
+
+    .topnav.responsive ul {
+      display: block;
+    }
+
+    .topnav.responsive ul li {
+      display: block;
+      padding: 3px 0 3px 35px;
+      background-color: #8b8b8b;
+    }
+
+    .topnav.responsive ul li:active {
+        background-color: #636363;
+
+    }
+
+    .icon {
+        display: inline-block;
+        color: #858282
+    }
+
+    .link-class {
+        color: #fff;
+        display: block;
+        border-bottom: 1px solid #fff;
+    }
+
+    .link-class:nth-last-child(1){
+        border-style: none;
+      }
+  }
