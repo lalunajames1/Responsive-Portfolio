@@ -51,6 +51,10 @@ nav ul li {
     padding-left: 30px;
 }
 
+.icon {
+    display: none;
+}
+
 a {
     color: rgba(133, 130, 130)
 }
